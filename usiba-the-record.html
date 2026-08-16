@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="USIBA — A Literary History: The Record">
+<title>USIBA — A Literary History: The Record</title>
+
+<style>
+  :root {
+    --cream: #F2EBE1;
+    --orange: #FC4C00;
+    --ink: #141210;
+    --muted: #4A443C;
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    margin: 0;
+    padding: 0;
+    background: var(--cream);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .record {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--cream);
+    overflow: hidden;
+  }
+
+  .record-head {
+    padding: clamp(28px, 5vw, 64px) clamp(20px, 5vw, 64px) 0;
+  }
+
+  .kicker {
+    margin: 0 0 clamp(12px, 2vw, 20px);
+    color: var(--orange);
+    font-size: clamp(10px, 1.1vw, 14px);
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: .19em;
+  }
+
+  h1 {
+    margin: 0;
+    color: var(--orange);
+    font-size: clamp(34px, 5.8vw, 72px);
+    font-weight: 900;
+    line-height: 1.01;
+    letter-spacing: -.04em;
+  }
+
+  h1 span { color: var(--ink); }
+
+  .lede {
+    max-width: 760px;
+    margin: clamp(16px, 2.2vw, 26px) 0 0;
+    color: var(--muted);
+    font-size: clamp(14px, 1.55vw, 19px);
+    line-height: 1.55;
+  }
+
+  .rows {
+    margin-top: clamp(34px, 5vw, 64px);
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: minmax(125px, 21%) minmax(0, 1fr);
+    gap: clamp(20px, 4vw, 56px);
+    padding: clamp(22px, 2.8vw, 38px) clamp(20px, 5vw, 64px);
+    border-top: 2px solid var(--orange);
+  }
+
+  .year {
+    min-width: 0;
+    color: var(--orange);
+    font-size: clamp(23px, 4vw, 52px);
+    font-weight: 900;
+    line-height: .96;
+    letter-spacing: -.035em;
+    overflow-wrap: anywhere;
+  }
+
+  .mode {
+    margin: 0 0 7px;
+    color: var(--orange);
+    font-size: clamp(9px, 1vw, 12px);
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: .17em;
+  }
+
+  h2 {
+    margin: 0 0 8px;
+    color: var(--ink);
+    font-size: clamp(18px, 2.25vw, 28px);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -.015em;
+  }
+
+  .desc {
+    max-width: 850px;
+    margin: 0;
+    color: var(--muted);
+    font-size: clamp(13px, 1.4vw, 17px);
+    line-height: 1.58;
+  }
+
+  .now .year,
+  .now .mode,
+  .now h2 {
+    color: var(--ink);
+  }
+
+  .foot {
+    margin-top: 0;
+    padding: clamp(20px, 2.8vw, 34px) clamp(20px, 5vw, 64px);
+    background: var(--orange);
+  }
+
+  .foot p {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(10px, 1.15vw, 15px);
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+  }
+
+  @media (max-width: 700px) {
+    .row {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .year {
+      font-size: clamp(26px, 9vw, 44px);
+    }
+  }
+
+  @media (max-width: 420px) {
+    .record-head,
+    .row,
+    .foot {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    h1 {
+      font-size: clamp(31px, 11vw, 43px);
+    }
+  }
+</style>
+</head>
+
+<body>
+<main class="record">
+
+  <header class="record-head">
+    <p class="kicker">Eastern Cape | South Africa</p>
+
+    <h1>
+      A Literary History:<br>
+      <span>The Record</span>
+    </h1>
+
+    <p class="lede">
+      Before the press, the record was spoken. From 1823 it was also printed.
+      This is the line USIBA enters.
+    </p>
+  </header>
+
+  <section class="rows" aria-label="Literary history timeline">
+
+    <article class="row">
+      <div class="year">Before 1823</div>
+      <div>
+        <p class="mode">Oral tradition</p>
+        <h2>Oral traditions</h2>
+        <p class="desc">Before the press, literature lived in performance: izibongo, iintsomi, iingoma, proverbs, histories and other forms of oral knowledge carried across generations.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1823</div>
+      <div>
+        <p class="mode">Printing press</p>
+        <h2>The Tyhume Press</h2>
+        <p class="desc">A printing press arrives at Tyhume. The first printed isiXhosa emerges, establishing the foundations of a written literary culture.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1840s</div>
+      <div>
+        <p class="mode">Education / publishing</p>
+        <h2>Lovedale</h2>
+        <p class="desc">Lovedale grows into a centre of education, language, publishing and intellectual life in the Eastern Cape.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1867</div>
+      <div>
+        <p class="mode">Translation</p>
+        <h2>Tiyo Soga</h2>
+        <p class="desc">Soga's translation of The Pilgrim's Progress is published at Lovedale, extending the possibilities of isiXhosa in print.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1881</div>
+      <div>
+        <p class="mode">Newspaper</p>
+        <h2>John Tengo Jabavu</h2>
+        <p class="desc">Jabavu becomes editor of Isigidimi SamaXhosa, helping establish the newspaper as a space for African writing and public debate.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1884</div>
+      <div>
+        <p class="mode">Newspaper</p>
+        <h2>Imvo Zabantsundu</h2>
+        <p class="desc">Jabavu establishes Imvo Zabantsundu in King William's Town. The newspaper becomes a major platform for Black intellectual and literary life.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1906</div>
+      <div>
+        <p class="mode">Anthology</p>
+        <h2>Zemk' Inkomo Magwalandini!</h2>
+        <p class="desc">W. B. Rubusana gathers poetry, prose and intellectual writing in one of the early major anthologies of African literature.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1914</div>
+      <div>
+        <p class="mode">Novel</p>
+        <h2>Ityala Lamawele</h2>
+        <p class="desc">S. E. K. Mqhayi brings Xhosa law, custom and inherited knowledge into the form of the modern novel.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1920–1929</div>
+      <div>
+        <p class="mode">Poetry</p>
+        <h2>Nontsizi Mgqwetho</h2>
+        <p class="desc">Nontsizi Mgqwetho publishes a remarkable body of isiXhosa poetry in Umteteli wa Bantu.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1940s</div>
+      <div>
+        <p class="mode">Novel / scholarship</p>
+        <h2>A. C. Jordan</h2>
+        <p class="desc">Jordan extends the tradition through fiction, scholarship and African-language intellectual work.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1940s–1960s</div>
+      <div>
+        <p class="mode">Intellectual life</p>
+        <h2>Fort Hare</h2>
+        <p class="desc">Fort Hare becomes part of the Eastern Cape's wider literary and intellectual infrastructure.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1960</div>
+      <div>
+        <p class="mode">Memoir</p>
+        <h2>Noni Jabavu</h2>
+        <p class="desc">Noni Jabavu carries the Eastern Cape literary tradition into memoir and an international literary career.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">1972</div>
+      <div>
+        <p class="mode">Archive</p>
+        <h2>Literary archive</h2>
+        <p class="desc">The National English Literary Museum is established in Makhanda, making the Eastern Cape a place not only of literary production, but of preservation.</p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="year">2019</div>
+      <div>
+        <p class="mode">Archive</p>
+        <h2>Amazwi</h2>
+        <p class="desc">Amazwi expands its collecting mandate to all of South Africa's official languages, with an initial focus on isiXhosa.</p>
+      </div>
+    </article>
+
+    <article class="row now">
+      <div class="year">2026</div>
+      <div>
+        <p class="mode">Literary platform</p>
+        <h2>USIBA</h2>
+        <p class="desc">USIBA enters this lineage: a publication-first literary platform rooted in the Eastern Cape.</p>
+      </div>
+    </article>
+
+    <article class="row now">
+      <div class="year">2026</div>
+      <div>
+        <p class="mode">Literary journal</p>
+        <h2>IMBEWU</h2>
+        <p class="desc">IMBEWU begins the next record. New writing enters the archive.</p>
+      </div>
+    </article>
+
+  </section>
+
+  <footer class="foot">
+    <p>USIBA &nbsp;·&nbsp; IMBEWU</p>
+  </footer>
+
+</main>
+</body>
+</html>
